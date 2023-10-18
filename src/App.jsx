@@ -7,9 +7,11 @@ const App = () => {
 
   return (
     <div>
-      {taskData.map((data) => (
-        <Board key={data.id} boardTitle={data.boardTitle} lists={data.lists} />
-      ))}
+      <Board
+        key={taskData.id}
+        boardTitle={taskData.boardTitle}
+        lists={taskData.lists}
+      />
     </div>
   );
 };
