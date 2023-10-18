@@ -1,0 +1,11 @@
+.board {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+}
