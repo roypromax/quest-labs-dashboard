@@ -1,7 +1,8 @@
 import React from "react";
+import styles from "./Task.module.css";
 
-const Task = () => {
-  return <div>Task</div>;
+const Task = ({ taskTitle }) => {
+  return <div className={styles.task}>{taskTitle}</div>;
 };
 
 export default Task;
