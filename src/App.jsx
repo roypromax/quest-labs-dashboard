@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Board from "./components/Board";
-import dummyData from "./data/dummyData";
+import { TaskContext, TaskProvider } from "./context/TaskContext";
 
 const App = () => {
+  const { taskData } = useContext(TaskContext);
+
   return (
     <div>
-      {dummyData.map((data) => (
+      {taskData.map((data) => (
         <Board key={data.id} boardTitle={data.boardTitle} lists={data.lists} />
       ))}
     </div>
